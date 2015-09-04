@@ -36,8 +36,8 @@ import com.pixotech.android.scanner.library.ScannerActivity;
 public class ScanActivity extends ScannerActivity {
     @Override
     public void handleDecode(String result) {
-		// do something with the result
-	}
+        // do something with the result
+    }
 }
 ```
 
@@ -49,10 +49,18 @@ To overlay your own interface layout on top of ScannerActivity's camera preview,
 ```
 @Override
 public void onCreate(Bundle savedInstanceState) {
-	super.onCreate(savedInstanceState);
+    super.onCreate(savedInstanceState);
 
-	addLayout(R.layout.scan_layout);
+    addLayout(R.layout.scan_layout);
 }
+```
+
+The VIN Barcode Scanner SDK provides a simple laser viewfinder View that can be added to your layout. You can add the viewfinder to your layout as a View with the custom class *com.pixotech.scanner.library.LaserView*:
+
+```
+<com.pixotech.android.scanner.library.LaserView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" />
 ```
 
 ---
