@@ -19,12 +19,12 @@ To add VIN Barcode scanning to your Android application, follow these 4 simple s
 
 ---
 
-####Include AndroidScanLib-release.aar####
+####Include AndroidScanLib.aar####
 
  1. Clone or download this repository
- 2. Copy **AndroidScanLib-release.aar** from <i class="icon-folder">AndroidScanLib/libs</i> into your projects **libs** directory.
+ 2. Copy **AndroidScanLib.aar** from <i class="icon-folder">AndroidScanLib/libs</i> into your projects **libs** directory.
   1. The default location in a new Android Studio project would be *Project/app/libs/*
- 3. Add **AndroidScanLib-release.aar** to your project:
+ 3. Add **AndroidScanLib.aar** to your project:
   1. <i class="icon-folder">AndroidScanLib</i> contains an example Gradle file **AndroidScanLib.gradle** which needs to be merged with your projects **build.gradle**
   2. Your existing **build.gradle** may not contain a *repositories* section. If not, this section should be added at the root level of the file.
 
@@ -36,8 +36,8 @@ import com.pixotech.android.scanner.library.ScannerActivity;
 public class ScanActivity extends ScannerActivity {
     @Override
     public void handleDecode(String result) {
-        // do something with the result
-    }
+		// do something with the result
+	}
 }
 ```
 
@@ -55,7 +55,10 @@ public void onCreate(Bundle savedInstanceState) {
 }
 ```
 
-The VIN Barcode Scanner SDK provides a simple laser viewfinder View that can be added to your layout. You can add the viewfinder to your layout as a View with the custom class *com.pixotech.scanner.library.LaserView*:
+The VIN Barcode Scanner SDK provides two simple laser viewfinder Views that can be added to your layout: LaserView and DataMatrixLaserView. The DataMatrixLaserView includes an outline of a square region near the middle of the screen. This region is positioned and sized to optimize recognition of DataMatrix codes. You can add either viewfinder to your layout as a View with one of the custom classes
+
+* *com.pixotech.scanner.library.LaserView*
+* *com.pixotech.scanner.library.DataMatrixLaserView*
 
 ```
 <com.pixotech.android.scanner.library.LaserView
@@ -116,7 +119,7 @@ public void startScan();
 
 ####**toggleTorch**####
 
-Turns the torch on/off if the device camera has a flash that may be used as a flashlight. **toggleTorch** may be referenced directly by a Button's onClick property in your layout file.
+Turns the torch on/off if the device camera has a flash that may be used as a flashlight. **toggleTorch** may be referenced directly by a Button's onClick property in your layout.
 
 ```
 public void toggleTorch(View view);
