@@ -5,5 +5,8 @@ repositories {
 }
 
 dependencies {
+    compile 'com.squareup.retrofit:retrofit:1.9.0'
+    compile 'com.google.code.gson:gson:2.3.1'
+    compile 'com.android.support:appcompat-v7:23.1.1'
     compile 'com.pixotech.android.scanner.library:AndroidScanLib@aar'
 }
