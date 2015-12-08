@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.widget.TextView;
 
 import com.pixotech.android.scanner.library.ScannerActivity;
+import com.pixotech.android.scanner.library.Utility;
 
 
 public class ScanActivity extends ScannerActivity {
