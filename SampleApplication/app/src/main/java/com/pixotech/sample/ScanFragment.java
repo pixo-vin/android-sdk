@@ -25,5 +25,6 @@ public class ScanFragment extends com.pixotech.android.scanner.library.ScannerFr
         vibrate();
         TextView t = (TextView)getView().findViewById(R.id.vinTextView);
         t.setText(s);
+        startScan();
     }
 }

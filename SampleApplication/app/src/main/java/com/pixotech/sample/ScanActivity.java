@@ -23,5 +23,6 @@ public class ScanActivity extends ScannerActivity {
     public void handleDecode(String s) {
         vibrate();
         vinTextView.setText(s);
+        startScan();
     }
 }
