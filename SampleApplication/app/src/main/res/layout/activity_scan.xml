@@ -10,7 +10,7 @@
         android:textSize="32sp"
         android:id="@+id/vinTextView" />
 
-    <com.pixotech.android.scanner.library.LaserView
+    <com.pixotech.android.scanner.library.DataMatrixLaserView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 
