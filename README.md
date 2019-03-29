@@ -6,7 +6,7 @@ The VIN Barcode Scanner Software Development Kit for Android is packaged as an A
 
 To enable barcode scanning in your application you will need to obtain a SDK key. This key is tied to your application through its Package ID. The Package ID is the string, generally in a reverse-DNS format, which identifies your application uniquely in the Google Play store. For example: *com.company-name.application-name*
 
-Contact us at barcode@pixotech.com to initiate a free trial or commercial license and activate your SDK key.
+Contact us at info@pixovin.com to initiate a free trial or commercial license and activate your SDK key.
 
 ---
 
